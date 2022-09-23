@@ -12,7 +12,7 @@ This application was created with the following language and module versions:
 
 - Python 3.10.7
 
-## Features
+## Main Features
 
 This program provides a series of functions that are helpful for file preprocessing and file analysis.
 
@@ -24,19 +24,20 @@ The functions created are as follows:
 4. Sorter function to sort words in a body  of text alphabetically.
 5. Randomizer that can that scramble words randomly in a body of text.
 
-## Features
+## Testing Functions
 
-This program provides a series of functions that are helpful for file preprocessing and file analysis.
+The following functions are used for testing purposes.
 
-### Wordsoup() 
-Arguments : a String containing the name of the txt file you wish to read. 
-Outputs: A string containing the passage with scrambled words. 
+### wordsoup.py
+
+Arguments : a String containing the name of the txt file you wish to read.
+Outputs: A string containing the passage with scrambled words.
 
 Uses txt_read() and scrambles the words in the output
 
-
 ### txt_read()
-Arguments : a String containing the name of the txt file you wish to read. 
+
+Arguments : a String containing the name of the txt file you wish to read.
 Outputs: A string containing the wors of the txt file.
 
 Reads a .txt and returns following data as a string.

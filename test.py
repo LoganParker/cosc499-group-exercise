@@ -3,9 +3,9 @@ import preprocess as p
 from wordsoup import wordsoup, txt_read
 
 
-class MainTestCase(unittest.TestCase):
-    def io_test(self):
-        self.assertEqual('Our team had a debate for best names for looping variables ? i won',
+class GroupExerciseTest(unittest.TestCase):
+    def test_io(self):
+        self.assertEqual('Our team had a debate for best names for looping variables ? i won\n',
                          p.read_text('text_files/test.txt'))
 
     def test_text_proc_replace_contractions(self):
