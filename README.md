@@ -1,9 +1,20 @@
-# cosc499-group-exercise
- 
+# COSC 499 Team GitHub Exercise
+
+Due September 23, 2022
 
 ## Purpose
 
-A series of functions that are helpful for file preprocessing and file analysis.
+The purpose of this small programming project is to ensure that we are familiar with creating branches, opening pull requests, dealing with merge issues, and reviewing each others' work.
+
+## Language and Modules
+
+This application was created with the following language and module versions:
+
+- Python 3.10.7
+
+## Features
+
+This program provides a series of functions that are helpful for file preprocessing and file analysis.
 
 The functions created are as follows:
 
