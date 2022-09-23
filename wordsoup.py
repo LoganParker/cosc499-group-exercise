@@ -2,7 +2,6 @@
 import pandas as pd
 import random 
 
-
 def txt_read(txt):
     df = pd.read_csv(txt, sep=" ")
     df = df.dropna()
