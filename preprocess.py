@@ -58,6 +58,10 @@ def preproc_str(string: str, replaceContractions: bool = False) -> str:
     string = __remove_whitespaces(string)
     return string
 
-
-
-
+def get_word_count(string: str) -> int:
+    """
+    Returns an integer indicating the number of words in the string.
+    Uses preproc_str() first to ensure special characters are not counted as words.
+    """
+    arr_str = preproc_str(string).split(" ")
+    return len(arr_str)

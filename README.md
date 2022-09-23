@@ -20,8 +20,9 @@ The functions created are as follows:
 
 1. Read a file and convert its contents into a string.
 2. Preprocessor to remove puncuation and capitalization from a body of text.
-3. Sorter function to sort words in a body  of text alphabetically.
-4. Randomizer that can that scramble words randomly in a body of text.
+3. Word counter to return the number of words in the preprocessed string.
+4. Sorter function to sort words in a body  of text alphabetically.
+5. Randomizer that can that scramble words randomly in a body of text.
 
 ## Features
 

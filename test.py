@@ -21,6 +21,10 @@ class MainTestCase(unittest.TestCase):
         expected_string = "our team had a debate for best names for looping variables i won"
         self.assertEqual(expected_string, p.preproc_str(test_string))
 
+    def test_word_count(self):
+        test_string = "Our team had a debate for best names for looping variables ? i won"
+        expected_count = 13
+        self.assertEqual(expected_count, p.get_word_count(test_string))
     # test function to test equality of two value
     def test_wordsoup(self):
         fname = "Read.txt"
