@@ -2,9 +2,11 @@ import unittest
 import preprocess as p
 from wordsoup import wordsoup, txt_read
 
-class MainTestCase(unittest.TestCase):    
+
+class MainTestCase(unittest.TestCase):
     def io_test(self):
-        self.assertEqual('Our team had a debate for best names for looping variables ? i won', p.read_text('text_files/test.txt'))
+        self.assertEqual('Our team had a debate for best names for looping variables ? i won',
+                         p.read_text('text_files/test.txt'))
 
     def test_text_proc_replace_contractions(self):
         test_string = "Hi   \nHow're\nYou?\nI'm well!\n Don't? Would've, I'll, she's, she'll!\n"
@@ -25,11 +27,21 @@ class MainTestCase(unittest.TestCase):
         test_string = "Our team had a debate for best names for looping variables ? i won"
         expected_count = 13
         self.assertEqual(expected_count, p.get_word_count(test_string))
+
     # test function to test equality of two value
     def test_wordsoup(self):
-        fname = "Read.txt"
+        fname = "text_files/read.txt"
         message = "Values are not unequal!"
         self.assertNotEqual(txt_read(fname), wordsoup(fname), message)
+    # This ensures the alphabetical sorting is correct
+
+    def test_sort(self):
+        sorted_text = ['a', 'best', 'debate', 'for', 'for', 'had', 'i', 'looping', 'names', 'our', 'team', 'variables', 'won']
+        file_name = "text_files/test.txt"
+        text_string = p.read_text(file_name)
+        sorted_string = p.sort_text(text_string)
+        self.assertEqual(sorted_text, sorted_string)
+
 
 if __name__ == '__main__':
     unittest.main()
