@@ -79,6 +79,7 @@ def sort_text(text: str) -> list:
     :param text: A preprocessed string
     :return: sorted list
     """
+    text = preproc_str(text)
     text_array = text.split()
     text_array.sort()
     return text_array

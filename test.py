@@ -30,14 +30,17 @@ class MainTestCase(unittest.TestCase):
 
     # test function to test equality of two value
     def test_wordsoup(self):
-        fname = "Read.txt"
+        fname = "text_files/read.txt"
         message = "Values are not unequal!"
         self.assertNotEqual(txt_read(fname), wordsoup(fname), message)
     # This ensures the alphabetical sorting is correct
 
     def test_sort(self):
-        file_name = "Read.txt"
-
+        sorted_text = ['a', 'best', 'debate', 'for', 'for', 'had', 'i', 'looping', 'names', 'our', 'team', 'variables', 'won']
+        file_name = "text_files/test.txt"
+        text_string = p.read_text(file_name)
+        sorted_string = p.sort_text(text_string)
+        self.assertEqual(sorted_text, sorted_string)
 
 
 if __name__ == '__main__':
