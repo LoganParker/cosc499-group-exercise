@@ -23,3 +23,20 @@ The functions created are as follows:
 3. Word counter to return the number of words in the preprocessed string.
 4. Sorter function to sort words in a body  of text alphabetically.
 5. Randomizer that can that scramble words randomly in a body of text.
+
+## Features
+
+This program provides a series of functions that are helpful for file preprocessing and file analysis.
+
+### Wordsoup() 
+Arguments : a String containing the name of the txt file you wish to read. 
+Outputs: A string containing the passage with scrambled words. 
+
+Uses txt_read() and scrambles the words in the output
+
+
+### txt_read()
+Arguments : a String containing the name of the txt file you wish to read. 
+Outputs: A string containing the wors of the txt file.
+
+Reads a .txt and returns following data as a string.
