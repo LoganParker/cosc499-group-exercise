@@ -16,4 +16,3 @@ def wordsoup(txt):
     return " ".join(str_out)
 
 
-wordsoup("Read.txt")
