@@ -1,5 +1,6 @@
 import unittest
 import preprocess as p
+from wordsoup import wordsoup, txt_read
 
 class MainTestCase(unittest.TestCase):    
     def io_test(self):
@@ -19,6 +20,12 @@ class MainTestCase(unittest.TestCase):
         test_string = "Our team had a debate for best names for looping variables ? i won"
         expected_string = "our team had a debate for best names for looping variables i won"
         self.assertEqual(expected_string, p.preproc_str(test_string))
+
+    # test function to test equality of two value
+    def test_wordsoup(self):
+        fname = "Read.txt"
+        message = "Values are not unequal!"
+        self.assertNotEqual(txt_read(fname), wordsoup(fname), message)
 
 if __name__ == '__main__':
     unittest.main()
